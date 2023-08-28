@@ -47,3 +47,6 @@ export const weatherIcons = {
     icon_night: iconSnowNight,
   },
 }
+
+// keyof type of will provide only the key values of the types contained on "weatherIcons" so as: "Clouds, Rain, Clear, Snow..."
+export type WeatherIconsKeysProps = keyof typeof weatherIcons

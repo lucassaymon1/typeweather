@@ -18,7 +18,7 @@ interface CityAPIResponseProps{
     lon: number
   }
 }
-// "Promise<Props>" refers to the type of an async function 
+// "Promise<CityProps>" refers to the type of an async function 
 export async function getCityByNameService(name: string): Promise<CityProps[]> {
   try {
     const { data } = await api.get<CityAPIResponseProps>(`/weather?q=${name}`);
